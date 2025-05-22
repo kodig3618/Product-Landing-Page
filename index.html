@@ -1,135 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crochet Kits Landing Page</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Kits - Start Your Creative Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header id="header">
-    <img src="crochet-logo.png" alt="Crochet Logo" id="header-img" />
-    <nav id="nav-bar">
-      <a href="#features" class="nav-link">Features</a>
-      <a href="#video-section" class="nav-link">How It Works</a>
-      <a href="#pricing" class="nav-link">Pricing</a>
-      <a href="#testimonials" class="nav-link">Testimonials</a>
-      <a href="#faq" class="nav-link">FAQ</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="hero">
-      <h1>Start Your Crochet Journey Today!</h1>
-      <p>Discover easy-to-use kits for all skill levels. Create beautiful projects and join a vibrant community.</p>
-      <a href="#signup" class="cta-button">Get Started</a>
-    </section>
-
-    <section id="features">
-      <h2>Everything You Need to Start Crocheting</h2>
-      <ul>
-        <li>Beginner-friendly crochet kits</li>
-        <li>Includes hooks, yarn, and patterns</li>
-        <li>Bonus items like stitch markers and tote bags</li>
-        <li>Step-by-step video tutorials</li>
-        <li>Access to a supportive online community</li>
-        <li>Eco-friendly packaging</li>
-      </ul>
-    </section>
-
-    <section id="video-section">
-      <h2>Watch How It Works</h2>
-      <iframe id="video" width="560" height="315" 
-      src="https://www.youtube.com/embed/Ik-GSXWoSak?start=231" 
-      frameborder="0" allowfullscreen></iframe>
-    </section>
-
-    <section id="pricing">
-      <h2>Our Kits</h2>
-      <div class="kit-container">
-        <div class="kit">
-          <h3>Basic Kit</h3>
-          <p class="price">$19.99</p>
-          <ul>
-            <li>Yarn, hook, simple patterns</li>
-            <li>Quick start guide</li>
-          </ul>
-          <button class="buy-btn">Buy Now</button>
+    <header id="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="logo-icon">🧶</div>
+                <span class="logo-text">CrochetCraft</span>
+            </div>
+            <nav id="nav-bar">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#video-section" class="nav-link">How It Works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <div class="kit">
-          <h3>Starter Bundle</h3>
-          <p class="price">$34.99</p>
-          <ul>
-            <li>Everything in Basic</li>
-            <li>Accessories: stitch markers, tote bag</li>
-            <li>Extra patterns</li>
-          </ul>
-          <button class="buy-btn">Buy Now</button>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Start Your <span class="gradient-text">Crochet Journey</span> Today
+                    </h1>
+                    <p class="hero-description">
+                        Transform your creativity with premium crochet kits designed for all skill levels. 
+                        Join thousands who've discovered the joy of handmade crafts.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="10000">0</span>
+                            <span class="stat-label">Happy Crafters</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Unique Patterns</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="99">0</span>
+                            <span class="stat-label">% Satisfaction</span>
+                        </div>
+                    </div>
+                    <a href="#signup" class="cta-button primary-cta">
+                        <span>Start Creating</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-yarn"></div>
+                        <div class="floating-hook"></div>
+                        <div class="floating-pattern"></div>
+                    </div>
+                    <div class="hero-image-placeholder">
+                        <div class="crochet-animation">
+                            <div class="yarn-ball"></div>
+                            <div class="crochet-hook"></div>
+                            <div class="stitches">
+                                <div class="stitch" style="--delay: 0s"></div>
+                                <div class="stitch" style="--delay: 0.2s"></div>
+                                <div class="stitch" style="--delay: 0.4s"></div>
+                                <div class="stitch" style="--delay: 0.6s"></div>
+                                <div class="stitch" style="--delay: 0.8s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="section-header">
+                <h2>Everything You Need to Start Creating</h2>
+                <p>From complete beginner to advanced crafter, we've got you covered</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Complete Kits</h3>
+                    <p>Every kit includes premium hooks, soft yarn, detailed patterns, and all accessories needed to complete your project.</p>
+                </div>
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">📚</div>
+                    <h3>Step-by-Step Guides</h3>
+                    <p>Clear instructions with video tutorials make learning easy, even if you've never held a crochet hook before.</p>
+                </div>
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">👥</div>
+                    <h3>Supportive Community</h3>
+                    <p>Join our vibrant online community where crafters share tips, showcase projects, and support each other.</p>
+                </div>
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Sustainably sourced materials and recyclable packaging because we care about our planet as much as crafting.</p>
+                </div>
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">✨</div>
+                    <h3>Premium Quality</h3>
+                    <p>Hand-selected yarns and professional-grade tools ensure your creations look beautiful and last for years.</p>
+                </div>
+                <div class="feature-card" data-animation="slide-up">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Fast Shipping</h3>
+                    <p>Get your kit delivered quickly with free shipping on orders over $25. Start creating sooner!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-section" class="video-section">
+            <div class="section-header">
+                <h2>See How Easy It Is</h2>
+                <p>Watch our expert guide walk you through your first project</p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe id="video" 
+                            src="https://www.youtube.com/embed/Ik-GSXWoSak?start=231" 
+                            frameborder="0" 
+                            allowfullscreen>
+                    </iframe>
+                    <div class="video-overlay">
+                        <button class="play-button" id="play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="section-header">
+                <h2>Choose Your Perfect Kit</h2>
+                <p>Select the kit that matches your crafting ambitions</p>
+            </div>
+            <div class="pricing-toggle">
+                <button class="toggle-btn active" data-plan="monthly">One-Time Purchase</button>
+                <button class="toggle-btn" data-plan="yearly">Subscription (Save 20%)</button>
+            </div>
+            <div class="kit-container">
+                <div class="kit basic-kit" data-animation="fade-in">
+                    <div class="kit-header">
+                        <h3>Basic Kit</h3>
+                        <div class="price-container">
+                            <span class="price" data-monthly="19.99" data-yearly="15.99">$19.99</span>
+                            <span class="period">/kit</span>
+                        </div>
+                    </div>
+                    <div class="kit-features">
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Premium yarn & hook</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>2 beginner patterns</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Quick start guide</span>
+                        </div>
+                    </div>
+                    <button class="buy-btn" data-kit="basic">Choose Basic</button>
+                </div>
+
+                <div class="kit starter-kit popular" data-animation="fade-in">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="kit-header">
+                        <h3>Starter Bundle</h3>
+                        <div class="price-container">
+                            <span class="price" data-monthly="34.99" data-yearly="27.99">$34.99</span>
+                            <span class="period">/kit</span>
+                        </div>
+                    </div>
+                    <div class="kit-features">
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Everything in Basic</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Stitch markers & tote bag</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>5 additional patterns</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Video tutorials access</span>
+                        </div>
+                    </div>
+                    <button class="buy-btn" data-kit="starter">Choose Starter</button>
+                </div>
+
+                <div class="kit deluxe-kit" data-animation="fade-in">
+                    <div class="kit-header">
+                        <h3>Deluxe Set</h3>
+                        <div class="price-container">
+                            <span class="price" data-monthly="59.99" data-yearly="47.99">$59.99</span>
+                            <span class="period">/kit</span>
+                        </div>
+                    </div>
+                    <div class="kit-features">
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Everything in Starter</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Premium luxury yarns</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Exclusive community access</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>1-on-1 expert support</span>
+                        </div>
+                    </div>
+                    <button class="buy-btn" data-kit="deluxe">Choose Deluxe</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-header">
+                <h2>What Our Crafters Say</h2>
+                <p>Join thousands of satisfied customers who've discovered the joy of crochet</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"I never thought I could crochet, but this kit made it so easy! The instructions were clear and the yarn quality is amazing. I've already completed three projects!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">J</div>
+                            <div class="author-info">
+                                <span class="author-name">Jamie L.</span>
+                                <span class="author-title">Beginner Crocheter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"The video tutorials are fantastic and the community is so helpful. I love how supportive everyone is, and the patterns are beautifully designed. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">P</div>
+                            <div class="author-info">
+                                <span class="author-name">Priya S.</span>
+                                <span class="author-title">Intermediate Crafter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"High quality materials and beautiful patterns. The deluxe set exceeded my expectations. The luxury yarns feel incredible and the finished projects look professional."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <span class="author-name">Alex R.</span>
+                                <span class="author-title">Advanced Crocheter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="nav-dot active" data-slide="0"></button>
+                <button class="nav-dot" data-slide="1"></button>
+                <button class="nav-dot" data-slide="2"></button>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our crochet kits</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need any experience to start?</span>
+                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No experience needed! Our kits are specifically designed for beginners with clear, step-by-step instructions and video tutorials to guide you through every stitch.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does shipping take?</span>
+                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Shipping usually takes 3-5 business days within the US. We offer free shipping on orders over $25, and express shipping options are available for faster delivery.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I buy kits as gifts?</span>
+                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our kits make perfect gifts for friends and family. We offer gift wrapping options and can include personalized messages with your order.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What if I get stuck on a pattern?</span>
+                        <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Don't worry! Our supportive community is always ready to help, and Deluxe Set customers get access to 1-on-1 expert support for personalized assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup" class="signup-section">
+            <div class="signup-content">
+                <div class="signup-text">
+                    <h2>Join Our Crochet Community</h2>
+                    <p>Get free patterns, crafting tips, and exclusive discounts delivered to your inbox</p>
+                </div>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" class="signup-form">
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <button type="submit" id="submit" class="submit-btn">
+                            <span>Get Started</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="signup-benefits">
+                        <div class="benefit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Free patterns every month</span>
+                        </div>
+                        <div class="benefit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Exclusive member discounts</span>
+                        </div>
+                        <div class="benefit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20,6 9,17 4,12"></polyline>
+                            </svg>
+                            <span>Early access to new kits</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>CrochetCraft</h4>
+                <p>Inspiring creativity through quality crochet kits and community support.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📌</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <a href="#pricing">Basic Kit</a>
+                <a href="#pricing">Starter Bundle</a>
+                <a href="#pricing">Deluxe Set</a>
+                <a href="#video-section">Tutorials</a>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="#faq">FAQ</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#signup">Contact</a>
+                <a href="#">Shipping</a>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <a href="#">Forum</a>
+                <a href="#">Gallery</a>
+                <a href="#">Blog</a>
+                <a href="#">Newsletter</a>
+            </div>
         </div>
-        <div class="kit">
-          <h3>Deluxe Set</h3>
-          <p class="price">$59.99</p>
-          <ul>
-            <li>Complete kit</li>
-            <li>Online lessons access</li>
-            <li>Premium yarns</li>
-            <li>Exclusive community group</li>
-          </ul>
-          <button class="buy-btn">Buy Now</button>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CrochetCraft. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#header">Back to top</a>
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <section id="testimonials">
-      <h2>What Our Customers Say</h2>
-      <div class="testimonial">
-        <p>"I never thought I could crochet, but this kit made it so easy!"</p>
-        <span>- Jamie L.</span>
-      </div>
-      <div class="testimonial">
-        <p>"The video tutorials are fantastic and the community is so helpful."</p>
-        <span>- Priya S.</span>
-      </div>
-      <div class="testimonial">
-        <p>"High quality materials and beautiful patterns. Highly recommend!"</p>
-        <span>- Alex R.</span>
-      </div>
-    </section>
-
-    <section id="faq">
-      <h2>Frequently Asked Questions</h2>
-      <details>
-        <summary>Do I need any experience to start?</summary>
-        <p>No experience needed! Our kits are designed for beginners.</p>
-      </details>
-      <details>
-        <summary>How long does shipping take?</summary>
-        <p>Shipping usually takes 3-5 business days within the US.</p>
-      </details>
-      <details>
-        <summary>Can I buy kits as gifts?</summary>
-        <p>Absolutely! Our kits make perfect gifts for friends and family.</p>
-      </details>
-    </section>
-
-    <section id="signup">
-      <h2>Join Our Crochet Community</h2>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" id="email" name="email" placeholder="Enter your email" required />
-        <input type="submit" id="submit" value="Get Started" />
-      </form>
-      <p>Sign up for updates, free patterns, and exclusive discounts!</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Crochet Kits. All rights reserved.</p>
-    <nav>
-      <a href="#header">Back to top</a>
-    </nav>
-  </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
